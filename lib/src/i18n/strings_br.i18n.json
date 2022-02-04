@@ -1,0 +1,27 @@
+{
+  "homeScreen": {
+    "title": "Seus cartões",
+    "createButton": "Criar novo cartão",
+    "dataRevealedButton": "Dados revelados",
+    "dataHiddenButton": "Dados ocultados",
+    "hiddenCard": "Nada para ver aqui ;)",
+    "noCardFound": "Nenhum cartão disponível :(",
+    "creditCard": "Crédito",
+    "debitCard": "Débito",
+    "englishButton": "EN",
+    "portugueseButton": "PT"
+  },
+  "creationScreen": {
+    "title": "Novo cartão",
+    "creditButton": "Crédito",
+    "debitButton": "Débito",
+    "nameForm": "Nome presente no cartão",
+    "numberForm": "Número do cartão",
+    "cancelButton": "Cancelar",
+    "createButton": "Criar"
+  },
+  "locales": {
+    "en": "English",
+    "br": "Português"
+  }
+}
