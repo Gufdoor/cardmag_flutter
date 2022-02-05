@@ -1,7 +1,7 @@
-import "package:card_app/src/modules/creation/creation_page.dart";
-import "package:card_app/src/modules/home/bloc/home_cubit.dart";
-import "package:card_app/src/modules/home/home_page.dart";
-import "package:card_app/src/modules/splash/splash_screen.dart";
+import "package:card_app/src/modules/card/bloc/card_cubit.dart";
+import "package:card_app/src/modules/card/home_page.dart";
+import 'package:card_app/src/modules/card/creation_page.dart';
+import "package:card_app/src/modules/splash/splash_view.dart";
 import "package:flutter_modular/flutter_modular.dart";
 
 const String splashRoute = "/";

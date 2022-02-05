@@ -158,6 +158,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "easy_mask",
+      "rootUri": "file:///C:/Users/42WE/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/easy_mask-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "equatable",
       "rootUri": "file:///C:/Users/42WE/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/equatable-2.0.3",
       "packageUri": "lib/",
@@ -584,7 +590,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2022-02-03T15:10:12.196439Z",
+  "generated": "2022-02-04T14:18:08.598792Z",
   "generator": "pub",
   "generatorVersion": "2.15.1"
 }

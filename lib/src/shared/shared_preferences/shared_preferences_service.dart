@@ -8,9 +8,9 @@ class SharedPreferencesService {
   }
 
   static Future<bool> saveList(
-      {required List<Map<String, dynamic>> data}) async {
+      {required List<Map<String, dynamic>> data, required String key}) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    return prefs.setString("cardList", json.encode(data));
+    return prefs.setString(key, json.encode(data));
   }
 
   static Future<String?> get({required String key}) async {

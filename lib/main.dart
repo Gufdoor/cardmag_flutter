@@ -19,7 +19,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       locale: TranslationProvider.of(context).flutterLocale,
       supportedLocales: LocaleSettings.supportedLocales,
-      localizationsDelegates: GlobalCupertinoLocalizations.delegates,
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate
+      ],
       debugShowCheckedModeBanner: false,
       title: "CardMag",
       initialRoute: splashRoute,
