@@ -2,10 +2,10 @@ import "package:card_app/src/domain/card_model.dart";
 import "package:card_app/src/i18n/strings.g.dart";
 import "package:card_app/src/modules/card/bloc/card_cubit.dart";
 import "package:card_app/src/modules/card/bloc/card_state.dart";
+import "package:easy_mask/easy_mask.dart";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "package:flutter_bloc/flutter_bloc.dart";
-import 'package:easy_mask/easy_mask.dart';
 
 class CreationScreen extends StatefulWidget {
   const CreationScreen({Key? key}) : super(key: key);
@@ -50,16 +50,17 @@ class _CreationScreenState extends State<CreationScreen> {
               child: BlocBuilder<HomeCubit, HomeState>(
                 builder: (context, state) {
                   return Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      const SizedBox(
-                        height: 50,
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * 0.072,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: <Widget>[
                           SizedBox(
-                            width: 90.0,
-                            height: 90.0,
+                            width: 96.0,
+                            height: 96.0,
                             child: ElevatedButton(
                               child: Text(
                                 t.creationScreen.creditButton,
@@ -90,8 +91,8 @@ class _CreationScreenState extends State<CreationScreen> {
                             ),
                           ),
                           SizedBox(
-                            width: 90.0,
-                            height: 90.0,
+                            width: 96.0,
+                            height: 96.0,
                             child: ElevatedButton(
                               child: Text(
                                 t.creationScreen.debitButton,
@@ -122,8 +123,8 @@ class _CreationScreenState extends State<CreationScreen> {
                           ),
                         ],
                       ),
-                      const SizedBox(
-                        height: 60,
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * 0.072,
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(
@@ -159,8 +160,8 @@ class _CreationScreenState extends State<CreationScreen> {
                           ),
                         ),
                       ),
-                      const SizedBox(
-                        height: 100,
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height * 0.12,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

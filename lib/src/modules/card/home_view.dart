@@ -49,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         SizedBox(
-                          width: 92.5,
+                          width: 74,
                           height: 48,
                           child: ElevatedButton(
                             child: Text(t.homeScreen.englishButton,
@@ -83,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ),
                         SizedBox(
-                          width: 92.5,
+                          width: 74,
                           height: 48,
                           child: ElevatedButton(
                             child: Text(t.homeScreen.portugueseButton,
@@ -121,7 +121,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
                 ),
                 SizedBox(
-                  width: 250,
+                  width: 188,
                   height: 48,
                   child: ElevatedButton(
                     child: Text(
@@ -148,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 BlocBuilder<HomeCubit, HomeState>(
                   builder: (context, state) {
                     return SizedBox(
-                      width: 250,
+                      width: 188,
                       height: 48,
                       child: ElevatedButton(
                         child: Text(
@@ -180,15 +180,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     );
                   },
                 ),
-                const SizedBox(
-                  height: 40.0,
-                ),
                 SingleChildScrollView(
                   child: Column(
                     children: [
                       SizedBox(
-                        height: 280.0,
-                        width: 320.0,
+                        height: MediaQuery.of(context).size.height * 0.4,
+                        width: MediaQuery.of(context).size.width * 0.88,
                         child: BlocBuilder<HomeCubit, HomeState>(
                           builder: (context, state) {
                             if (state.status == HomeStatus.loading) {
@@ -225,9 +222,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                 ),
-                const SizedBox(
-                  height: 30.0,
-                ),
               ],
             ),
           ),
@@ -243,7 +237,7 @@ class _HomeScreenState extends State<HomeScreen> {
           itemCount: _listCardModel.length,
           scrollDirection: Axis.vertical,
           itemBuilder: (context, index) => Container(
-            height: 140.0,
+            height: MediaQuery.of(context).size.height * 0.176,
             decoration: const BoxDecoration(
               color: Colors.indigoAccent,
               shape: BoxShape.rectangle,
@@ -258,13 +252,11 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             margin: const EdgeInsets.all(10.0),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const SizedBox(
-                      height: 75.0,
-                    ),
                     Text(
                       state.isDataVisible
                           ? _listCardModel[index].ownerName!

@@ -1,4 +1,4 @@
-#Fri Feb 04 13:17:12 BRT 2022
+#Mon Feb 07 16:18:34 BRT 2022
 base.0=C\:\\Me\\Onboarding\\Software\\First lesson\\First lesson\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
